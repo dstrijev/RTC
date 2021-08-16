@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1> {{project.name}}</h1>
+        <p> Milestone: {{project.milestone}}</p>
+        <p> Description: {{project.description}}</p>
+        <p> contacts: {{project.contacts}}</p>
+        <p> Type: {{project.type}}</p>
+        <p> Target WW: {{project.targetWw}}</p>
+        <p> Release Type: {{project.releaseType}}</p>
+        <p> SDLe Link: {{project.sdleLink}}</p>
+        <p> Protex Project Name: {{project.protexProjectName}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group" appDropdown>
+            <button class="btn btn-primary dropdown-toggle">Manage <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Edit checklist</a></li>
+                <li><a href="#">Delete Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-project-checklist
+            [project]="project"></app-project-checklist>
+    </div>
+</div>

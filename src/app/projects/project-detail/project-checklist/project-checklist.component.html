@@ -1,0 +1,164 @@
+<div class="row">
+    <div class="col-md-12">
+        <table  class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Domain</th>
+                <th scope="col">Details</th>
+                <th scope="col">Owner</th>
+                <th scope="col">Status</th>
+                <th scope="col">Release Criteria</th>
+                <th scope="col">Evidence</th>
+                <th scope="col">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="project.releaseType !== 'internal'">
+                <th scope="row">Product Requirements</th>
+                <td>PRD and Change Control</td>
+            </tr>
+            <tr *ngIf="project.releaseType !== 'internal'">
+                <th scope="row">Development Completion</th>
+                <td>Code completion, coverage and verification vs requirements</td>
+            </tr>
+            <tr *ngIf="project.releaseType !== 'internal'">
+                <th scope="row">Collateral</th>
+                <td>Customer Documentation Readiness and sign off by Legal</td>
+            </tr>
+            <tr *ngIf="project.releaseType !== 'internal'">
+                <th scope="row">Defects/Bugs</th>
+                <td>Meet Release criteria</td>
+            </tr>
+            <tr *ngIf="project.releaseType !== 'internal'">
+                <th scope="row" rowspan="8">Validation</th>
+            </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Functional Validation Plan coverage is 100% of the functional requirements</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Plan Reviewed and approved</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>KPIs and targets defined</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Stability Plan reviewed and approved</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Functional validation  meets the release criteria</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>All KPIs tested and meet the release criteria</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Stability validation meets the release criteria</td>
+                </tr>
+            <tr>
+                <th scope="row" rowspan=16>Legal/Export</th>
+            </tr>
+                <tr>
+                    <td>Export Approved</td>
+                </tr>
+                <tr>
+                    <td>(Cloud only)<br>
+                        Implement the Mechanism for Blocking users from Embargoed countries in the production environment</td>
+                </tr>
+                <tr>
+                    <td>TM&B Approved</td>
+                </tr>
+                <tr>
+                    <td>Protex BOM Created, fully & accurately populated including the correct usage  per component</td>
+                </tr>
+                <tr>
+                    <td>Protex Scan up & running</td>
+                </tr>
+                <tr>
+                    <td>All Protex Matches & License conflicts resolved</td>
+                </tr>
+                <tr>
+                    <td>BOM reviewed & signed off by BU attorney</td>
+                </tr>
+                <tr>
+                    <td>All Obligations fulfilled and checked in Protex</td>
+                </tr>
+                <tr>
+                    <td>OBL defined</td>
+                </tr>
+                <tr>
+                    <td>OS PDT Approval obtained</td>
+                </tr>
+                <tr>
+                    <td>(1)Integrate the Header read me file</td>
+                </tr>
+                <tr>
+                    <td>(2)Prepare the TPP/Attributions file</td>
+                </tr>
+                <tr>
+                    <td>(3)Prepare the OBL in PDF format</td>
+                </tr>
+                <tr>
+                    <td>Integrate the Legal Text Files as part of the released SW package under a ‘Legal Notices’ folder</td>
+                </tr>
+                <tr>
+                    <td>Archive SWLC evidence in the Record Center</td>
+                </tr>
+            <tr>
+                <th scope="row">Privacy</th>
+                <td>Obtain PIA approval</td>
+            </tr>
+            <tr *ngIf="project.releaseType !== 'internal'">
+                <th scope="row" rowspan=16>Security</th>
+            </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Open SDLe Project</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Complete SDLe survey</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Disposition SDLe tasks</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Complete SDLe tasks required for release</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Obtain Crypto review approval</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Obtain SAFE Approval</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Static analysis scan is running</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Resolve all required static analysis issues per release criteria</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>BDBA scan is running</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Resolve all required BDBA issues per release criteria</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>SNYK scan is running</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Resolve all required SNYK issues per release criteria</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>(Cloud Only) NetSparker is running on the production environment</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Run A/V scan of the released SW and obtain evidence of a clean scan</td>
+                </tr>
+                <tr *ngIf="project.releaseType !== 'internal'">
+                    <td>Complete SDLe tasks required for release</td>
+                </tr>    
+            <tr>
+                <th scope="row">SW QRC Compliance Status</th>
+                <td>Obtain final approval before release with SW quality authority</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
